@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_siakad_app_rudis/bloc/login/login_bloc.dart';
-import 'package:flutter_siakad_app_rudis/data/datasources/auth_local_datasource.dart';
-import 'package:flutter_siakad_app_rudis/data/models/request/auth_request_model.dart';
-import 'package:flutter_siakad_app_rudis/pages/dosen/dosen_page.dart';
-import 'package:flutter_siakad_app_rudis/pages/mahasiswa/mahasiswa_page.dart';
+import '../../../bloc/login/login_bloc.dart';
+import '../../../data/datasources/auth_local_datasource.dart';
+import '../../../data/models/request/auth_request_model.dart';
+import '../../../pages/dosen/dosen_page.dart';
+import '../../../pages/mahasiswa/mahasiswa_page.dart';
 
 import '../../../common/constants/colors.dart';
 import '../../../common/widgets/buttons.dart';

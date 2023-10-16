@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_siakad_app_rudis/pages/mahasiswa/absensi_page.dart';
+import 'package:flutter_siakad_app_rudis/pages/mahasiswa/jadwal_matkul.dart';
+import '../../../pages/mahasiswa/khs_page.dart';
+import '../../../pages/mahasiswa/nilai_mk_page.dart';
 
 import '../../common/constants/colors.dart';
 import '../../common/constants/images.dart';
@@ -31,12 +35,29 @@ class _DashboardPageState extends State<DashboardPage> {
                 color: ColorName.primary,
               ),
             ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.notifications,
-                color: ColorName.primary,
-              ),
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const AbsensiPage()),
+                    );
+                  },
+                  icon: const Icon(
+                    Icons.qr_code_scanner,
+                    color: ColorName.primary,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.notifications,
+                    color: ColorName.primary,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -48,21 +69,36 @@ class _DashboardPageState extends State<DashboardPage> {
         MenuCard(
           label: 'Kartu Hasil\nStudi',
           backgroundColor: const Color(0xff686BFF),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const KhsPage()),
+            );
+          },
           imagePath: Images.khs,
         ),
         const SizedBox(height: 40.0),
         MenuCard(
           label: 'Nilai\nMata Kuliah',
           backgroundColor: const Color(0xffFFB023),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const NilaiMkPage()),
+            );
+          },
           imagePath: Images.nMatkul,
         ),
         const SizedBox(height: 40.0),
         MenuCard(
           label: 'Jadwal\nMata Kuliah',
           backgroundColor: const Color(0xffFF68F0),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const JadwalMatkulPage()),
+            );
+          },
           imagePath: Images.jadwal,
         ),
       ],

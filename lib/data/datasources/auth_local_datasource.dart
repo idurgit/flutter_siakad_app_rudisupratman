@@ -1,4 +1,4 @@
-import 'package:flutter_siakad_app_rudis/data/models/response/auth_response_model.dart';
+import '../../../data/models/response/auth_response_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthLocalDatasource {

@@ -1,7 +1,8 @@
-import 'package:bloc/bloc.dart';
-import 'package:flutter_siakad_app_rudis/data/datasources/auth_remote_datasource.dart';
-import 'package:flutter_siakad_app_rudis/data/models/request/auth_request_model.dart';
-import 'package:flutter_siakad_app_rudis/data/models/response/auth_response_model.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../data/datasources/auth_remote_datasource.dart';
+import '../../data/models/request/auth_request_model.dart';
+import '../../data/models/response/auth_response_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'login_event.dart';

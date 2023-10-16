@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_siakad_app_rudis/bloc/logout/logout_bloc.dart';
-import 'package:flutter_siakad_app_rudis/data/datasources/auth_local_datasource.dart';
+import '../../../bloc/logout/logout_bloc.dart';
+import '../../../data/datasources/auth_local_datasource.dart';
 
 import '../auth/auth_page.dart';
 

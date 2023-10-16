@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_siakad_app_rudis/pages/mahasiswa/dashboard_page.dart';
-import 'package:flutter_siakad_app_rudis/pages/mahasiswa/setting_page.dart';
+import 'package:flutter_siakad_app_rudis/pages/mahasiswa/jadwal_matkul.dart';
+import '../../../pages/mahasiswa/dashboard_page.dart';
+
 import 'package:flutter_siakad_app_rudis/pages/profile/profile_page.dart';
 
 import '../../common/constants/colors.dart';
@@ -24,9 +25,7 @@ class _MahasiswaPageState extends State<MahasiswaPage> {
 
   final List<Widget> _pages = [
     const DashboardPage(),
-    const Center(
-      child: Text('Schedule'),
-    ),
+    const JadwalMatkulPage(),
     const ProfilePage(
       role: 'Mahasiswa',
     ),

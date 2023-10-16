@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_siakad_app_rudis/common/constants/variables.dart';
-import 'package:flutter_siakad_app_rudis/data/models/request/auth_request_model.dart';
-import 'package:flutter_siakad_app_rudis/data/models/response/auth_response_model.dart';
+import '../../../common/constants/variables.dart';
+import '../../../data/models/request/auth_request_model.dart';
+import '../../../data/models/response/auth_response_model.dart';
 import 'package:http/http.dart' as http;
 
 import 'auth_local_datasource.dart';
